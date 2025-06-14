@@ -1,0 +1,76 @@
+ body {
+     font-family: 'Inter', sans-serif;
+     background-color: #f8f9fa;
+     color: #1e293b;
+ }
+
+ h1,
+ h2,
+ h3 {
+     font-family: 'Space Grotesk', sans-serif;
+ }
+
+ .text-brand-blue {
+     color: #004E89;
+ }
+
+ .bg-brand-blue {
+     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=1470&q=80');
+     background-size: cover;
+     background-position: center;
+ }
+
+ .text-brand-orange {
+     color: #FF6B35;
+ }
+
+ .bg-brand-orange {
+     background-color: #FF6B35;
+ }
+
+ .nav-link {
+     position: relative;
+     color: black;
+     transition: color 0.3s;
+ }
+
+ .nav-link:hover {
+     color: #FF6B35;
+ }
+
+ .nav-link::after {
+     content: '';
+     position: absolute;
+     width: 0;
+     height: 2px;
+     bottom: -4px;
+     left: 50%;
+     transform: translateX(-50%);
+     background-color: #FF6B35;
+     transition: width 0.3s;
+ }
+
+ .nav-link:hover::after {
+     width: 100%;
+ }
+
+ .service-card {
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .service-card:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+ }
+
+ .process-step:hover .process-icon {
+     transform: scale(1.1);
+     background-color: #FF6B35;
+     color: white;
+ }
+
+ .tab-btn.active {
+     border-color: #FF6B35;
+     color: #FF6B35;
+     font-weight: bold;
+ }
